@@ -1391,6 +1391,11 @@ namespace Valve.VR.InteractionSystem
             }
         }
 
+        private void OnTriggerEnter(Collider somethingElse){
+        if(somethingElse.gameObject.CompareTag("bell")){
+            somethingElse.gameObject.SetActive(false);
+        }
+    }
 
         //-------------------------------------------------
         // Continue to hover over this object indefinitely, whether or not the Hand moves out of its interaction trigger volume.
