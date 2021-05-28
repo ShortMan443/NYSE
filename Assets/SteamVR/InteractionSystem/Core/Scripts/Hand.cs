@@ -45,6 +45,7 @@ namespace Valve.VR.InteractionSystem
         /////
         public AudioSource source;
         public AudioClip clip;
+        private int Zero;
         //////
         public SteamVR_Behaviour_Pose trackedObject;
 
@@ -967,8 +968,13 @@ namespace Valve.VR.InteractionSystem
                 //Write code that wil excute when touched
                 //contacting.gameObject.SetActive(false);
                 Debug.Log("I did somehthing");
-                
-                source.PlayOneShot(clip);
+
+                if(Zero < 1)
+                {
+                    source.PlayOneShot(clip);
+                    Zero++;
+                }
+                //source.PlayOneShot(clip);
             }
 
             if (showDebugInteractables && foundCloser)
