@@ -960,6 +960,12 @@ namespace Valve.VR.InteractionSystem
                     foundCloser = true;
                 }
                 iActualColliderCount++;
+
+                //Write code that wil excute when touched
+                contacting.gameObject.SetActive(false);
+                debugColor.Log("I did somehthing");
+
+
             }
 
             if (showDebugInteractables && foundCloser)
