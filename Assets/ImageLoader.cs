@@ -1,4 +1,3 @@
-//TESTING Not my own code
 
 // Credits to Maxoj
 // https://gist.github.com/maxoja
@@ -10,7 +9,9 @@ using UnityEngine;
 public class ImageLoader : MonoBehaviour
 {
     //https://stockcharts.com/c-sc/sc?s=AAPL&p=D&b=5&g=0&i=0&r=1622163694473
-    public string url = "https://charts2.finviz.com/chart.ashx?t=SPY&ta=1&ty=c&p=d&s=l";
+    
+    public string url = "https://charts2.finviz.com/chart.ashx?t=GME&ta=1&ty=c&p=d&s=l";
+    
     public Renderer thisRenderer;
 
     // automatically called when game started
