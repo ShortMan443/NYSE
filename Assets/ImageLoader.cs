@@ -10,7 +10,7 @@ public class ImageLoader : MonoBehaviour
 {
     //https://stockcharts.com/c-sc/sc?s=AAPL&p=D&b=5&g=0&i=0&r=1622163694473
     
-    public string url = "https://charts2.finviz.com/chart.ashx?t=GME&ta=1&ty=c&p=d&s=l";
+    public string url = "https://charts2.finviz.com/chart.ashx?t=GME&ta=0&ty=c&p=d&s=l";
     
     public Renderer thisRenderer;
 

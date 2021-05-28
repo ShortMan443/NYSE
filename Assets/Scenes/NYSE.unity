@@ -12391,7 +12391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01646ff5b119340c4b71c80456b42eef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: https://charts2.finviz.com/chart.ashx?t=GME&ta=1&ty=c&p=d&s=l
+  url: https://charts2.finviz.com/chart.ashx?t=GME&ta=0&ty=c&p=d&s=l
   thisRenderer: {fileID: 332478371}
 --- !u!65 &332478370
 BoxCollider:
