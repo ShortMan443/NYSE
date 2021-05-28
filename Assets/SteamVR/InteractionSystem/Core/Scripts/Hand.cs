@@ -42,7 +42,10 @@ namespace Valve.VR.InteractionSystem
 
         public Hand otherHand;
         public SteamVR_Input_Sources handType;
-
+        /////
+        public AudioSource source;
+        public AudioClip clip;
+        //////
         public SteamVR_Behaviour_Pose trackedObject;
 
         public SteamVR_Action_Boolean grabPinchAction = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("GrabPinch");
@@ -962,10 +965,10 @@ namespace Valve.VR.InteractionSystem
                 iActualColliderCount++;
 
                 //Write code that wil excute when touched
-                contacting.gameObject.SetActive(false);
-                debugColor.Log("I did somehthing");
-
-
+                //contacting.gameObject.SetActive(false);
+                Debug.Log("I did somehthing");
+                
+                source.PlayOneShot(clip);
             }
 
             if (showDebugInteractables && foundCloser)
