@@ -45,7 +45,9 @@ namespace Valve.VR.InteractionSystem
         /////
         public AudioSource source;
         public AudioClip clip;
+        
         private int Zero;
+
         //////
         public SteamVR_Behaviour_Pose trackedObject;
 
@@ -972,6 +974,7 @@ namespace Valve.VR.InteractionSystem
                 if(Zero < 1)
                 {
                     source.PlayOneShot(clip);
+                    
                     Zero++;
                 }
                 //source.PlayOneShot(clip);
